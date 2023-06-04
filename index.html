@@ -29,9 +29,23 @@
         </section>
 
         <img src="images/dice-5.png" alt="Playing dice" class="dice" />
+        <button class="btn btn--how">❓ How to play</button>
         <button class="btn btn--new">🔄 New game</button>
         <button class="btn btn--roll">🎲 Roll dice</button>
         <button class="btn btn--hold">📥 Hold</button>
+
+        <div class="modal hidden">
+            <button class="close-modal">&times;</button>
+            <h1 class="heading">How to Play?</h1>
+            <p class="description">
+                Click on the '🎲 Roll Dice' button to start the game. It displays a random dice from 1 to 6. The number on the dice is then added to the 'Current' section of the Player. If the dice displays number 6, then the 'Current' score is lost and the player is
+                switched.
+                <br>If the player decides to hold his 'Current' score using the '📥 Hold' button then his 'Current' score is added to the total score displayed under the 'Player' and the player is switched.<br>First player to reach a score of 100 (not
+                the 'Current' score) wins the game.
+                <br>To restart the game, simply click on the '🔁 New Game' Button.
+            </p>
+        </div>
+        <div class="overlay hidden"></div>
     </main>
     <script src="script.js"></script>
 </body>
